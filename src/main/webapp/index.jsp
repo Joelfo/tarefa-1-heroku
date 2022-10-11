@@ -11,7 +11,7 @@
     <jsp:include page="head.html"></jsp:include>
     <!--Inclusão do cabeçalho-->
     <jsp:include page="header.html"></jsp:include>
-    amsjknasJDNSAJFNDJASNDJKNASJDNJASONDOJASNOJDNOJASNDOJNSOJ
+ 
     <body>
         <h1>Preencha o formulário:</h1>
            <form action="sayhello.jsp" method="post">
