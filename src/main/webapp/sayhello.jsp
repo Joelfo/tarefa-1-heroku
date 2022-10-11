@@ -23,7 +23,7 @@
             String hour = request.getParameter("hour");
         %>
         <h2>
-            <c:if test="${hour != ''}">
+            <c:if test="${1 != ''}">
                 <jsp:setProperty name="TimeBean" property="time" value="<%=hour%>"/>
             </c:if>
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
