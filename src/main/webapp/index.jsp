@@ -1,15 +1,16 @@
+<%-- 
+    Document   : index
+    Created on : 11/10/2022, 15:17:44
+    Author     : joell
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Demo HelloWorld (com JSP)</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <!--Inclusão do head-->
+    <jsp:include page="head.html"></jsp:include>
+    <!--Inclusão do cabeçalho-->
+    <jsp:include page="header.html"></jsp:include>
     <body>
         <h1>Preencha o formulário:</h1>
            <form action="sayhello.jsp" method="post">
