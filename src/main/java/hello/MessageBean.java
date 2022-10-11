@@ -20,6 +20,7 @@ public class MessageBean implements Serializable {
     private String lang;
     private String msg;
     private String msg2;
+    private String period;
         
     public MessageBean() {
     }
@@ -30,6 +31,10 @@ public class MessageBean implements Serializable {
     
     public void setLang(String value) {
         lang = value;
+    }
+    
+    public void setPeriod(String period){
+        this.period = period;
     }
     public String getMsg() {
         switch (this.lang){
@@ -54,6 +59,44 @@ public class MessageBean implements Serializable {
                 return "Erstellt von";
             case "fr":
                 return "Créé par";
+        }
+        return "";
+    }
+    public String getMsg3() {
+        switch (this.period){
+            case "m":
+               switch(this.lang){
+                        case "pt":
+                           return "Bom Dia!";
+                        case "en":
+                            return "Good Morning!";
+                        case "de":
+                            return "Guten Morgen!";
+                        case "fr":
+                            return "Bonjur!";
+                               } 
+            case "a":
+                switch(this.lang){
+                        case "pt":
+                           return "Boa tarde!";
+                        case "en":
+                            return "Good Afternoon!";
+                        case "de":
+                            return "Guten Tag!";
+                        case "fr":
+                            return "Bonjur!";
+                               }
+            case "e":
+                 switch(this.lang){
+                        case "pt":
+                           return "Boa noite!";
+                        case "en":
+                            return "Good evening!";
+                        case "de":
+                            return "Guten Abend!";
+                        case "fr":
+                            return "Bonsoir!";
+                               }     
         }
         return "";
     }

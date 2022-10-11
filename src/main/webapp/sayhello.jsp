@@ -16,10 +16,18 @@
         
         <main> 
         <jsp:useBean id="myBean" class="hello.MessageBean"/>
+        <jsp:useBean id="timeBean" class="hello.TimeBean"/>
         <h1>Aplicativo HelloWorld</h1>
-        <% String lang = request.getParameter("lang"); %>
-        <h2><jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
-        <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!</h2>
+        <% 
+            String lang = request.getParameter("lang");
+        %>
+        <h2>
+            <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
+            <jsp:setProperty name="myBean" property="period" value="${timeBean.period}"/>
+            <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! 
+            <jsp:getProperty name="myBean" property="msg3"/>
+        </h2>
+        
         <jsp:getProperty name="myBean" property="msg2"/> <jsp:getProperty name="myBean" property="aut"/>
         </main>
         
