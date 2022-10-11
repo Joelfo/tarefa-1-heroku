@@ -26,6 +26,5 @@
     </main>
     <!-- Inclusão do rodapé -->
     <jsp:include page="footer.html"></jsp:include>
-
     </body>
 </html>
