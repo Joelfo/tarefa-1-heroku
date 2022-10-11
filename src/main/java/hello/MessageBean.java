@@ -45,7 +45,7 @@ public class MessageBean implements Serializable {
             case "de":
                 return "Hallo";
             case "fr":
-                return "Bonjour";
+                return "Salut";
         }
         return "";
     }

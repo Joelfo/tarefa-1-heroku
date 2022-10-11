@@ -20,7 +20,9 @@
            <input type="radio" name="lang" value="en"> Inglês
            <input type="radio" name="lang" value="fr"> Francês
            <input type="radio" name="lang" value="de"> Alemão<br><br>
-           Nome: <input type="text" name="nome"/><br><br>
+           Nome: <input type="text" name="nome"/><br>
+           <label for="text">Que horas são? (Se você não responder nada, será definido de forma automática)</label>
+           <br><input type="text" name="hour"/> <br><br>
            <input type="submit" value="Cumprimentar"/>
         </form>
     </main>
