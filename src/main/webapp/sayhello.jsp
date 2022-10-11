@@ -24,7 +24,7 @@
         %>
         <h2>
             <c:if test="${hour != ''}">
-                <jsp:setProperty name="TimeBean" property="time" value="1"/>
+                <jsp:setProperty name="timeBean" property="time" value="<%=hour%>"/>
             </c:if>
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
             <jsp:setProperty name="myBean" property="period" value="${timeBean.period}"/>
