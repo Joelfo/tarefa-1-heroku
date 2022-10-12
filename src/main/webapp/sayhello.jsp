@@ -31,7 +31,7 @@
             <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! 
             <jsp:getProperty name="myBean" property="msg3"/>
             <br>
-            <jsp:getProperty name="TimeBean" property="time"/>
+            <jsp:getProperty name="timeBean" property="time"/>
         </h2>
         
         <jsp:getProperty name="myBean" property="msg2"/> <jsp:getProperty name="myBean" property="aut"/>
