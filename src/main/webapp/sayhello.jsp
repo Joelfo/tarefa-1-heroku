@@ -20,11 +20,11 @@
         <h1>Aplicativo HelloWorld</h1>
         <% 
             String lang = request.getParameter("lang");
-            String hour = request.getParameter("hour");
+            String hour = floatrequest.getParameter("hour");
         %>
         <h2>
             <c:if test="${hour != ''}">
-                <jsp:setProperty name="timeBean" property="time" value="<%=hour%>"/>
+                <jsp:setProperty name="timeBean" property="time" value="<%=Float.parseFloat(hour)%>"/>
             </c:if>
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
             <jsp:setProperty name="myBean" property="period" value="${timeBean.period}"/>
