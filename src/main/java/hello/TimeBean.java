@@ -24,7 +24,7 @@ public class TimeBean implements Serializable {
     public float getTime(){
         return this.time;
     }
-    public void setTime(Float time){
+    public void setTime(float time){
         this.time = time;
     }
     public String getPeriod(){
