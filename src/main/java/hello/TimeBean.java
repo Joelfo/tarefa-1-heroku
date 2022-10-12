@@ -18,14 +18,14 @@ public class TimeBean implements Serializable {
     private String period;
     
     public TimeBean() {
-       setTime((float) Calendar.getInstance(TimeZone.getDefault()).get(Calendar.HOUR_OF_DAY));
+       setTime(String.valueOf(Calendar.getInstance(TimeZone.getDefault()).get(Calendar.HOUR_OF_DAY)));
     }
     
     public float getTime(){
         return this.time;
     }
-    public void setTime(float time){
-        this.time = time;
+    public void setTime(String time){
+        this.time = Float.parseFloat(time);
     }
     public String getPeriod(){
         if(time <= 12){
