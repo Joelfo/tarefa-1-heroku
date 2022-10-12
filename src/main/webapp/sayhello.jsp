@@ -21,9 +21,10 @@
         <% 
             String lang = request.getParameter("lang");
             String hour = request.getParameter("hour");
+            pageContext.setAttribute("hour", hour);
         %>
         <h2>
-            <c:if test="${empty hour}">
+            <c:if test="${not empty hour}">
                 <jsp:setProperty name="timeBean" property="time" value="<%=Float.parseFloat(hour)%>"/>
                 <p> flag </p>
             </c:if>
