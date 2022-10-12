@@ -20,7 +20,7 @@
         <h1>Aplicativo HelloWorld</h1>
         <% 
             String lang = request.getParameter("lang");
-            String hour = (float) request.getParameter("hour");
+            String hour = Float.parseFloat(request.getParameter("hour"));
         %>
         <h2>
             <c:if test="${hour != ''}">
