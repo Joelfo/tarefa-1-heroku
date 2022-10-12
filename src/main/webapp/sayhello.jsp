@@ -21,8 +21,8 @@
         <% 
             String lang = request.getParameter("lang");
             String hour = request.getParameter("hour");
-            Array hourInt = hour.split(":")
-            pageContext.setAttribute("hour", hourInt[0]);
+            hour = (hour.split(":"))[0]
+            pageContext.setAttribute("hour", hour);
         %>
         <h2>
             <c:if test="${not empty hour}">
