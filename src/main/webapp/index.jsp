@@ -23,7 +23,7 @@
            Nome: <input type="text" name="nome"/><br><br>
            
            <label for="text">Que horas são? (Se você não responder nada, será definido de forma automática)</label>
-           <br><input type="text" name="hour"/> <br><br>
+           <br><input type="time" name="hour"/> <br><br>
            <input type="submit" value="Cumprimentar"/>
         </form>
     </main>
