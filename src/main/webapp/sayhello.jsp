@@ -22,7 +22,7 @@
             String lang = request.getParameter("lang");
             String hour = request.getParameter("hour");
             if(hour.isEmpty()){
-                hour = ''
+                hour = '';
             }
         %>
         <h2>
