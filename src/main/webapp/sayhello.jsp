@@ -25,7 +25,7 @@
         <h2>
             <c:if test="${hour.isEmpty()}">
                 <jsp:setProperty name="timeBean" property="time" value="<%=Float.parseFloat(hour)%>"/>
-                nfdjdnfjnfjdj
+                <p> flag </p>
             </c:if>
             
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
