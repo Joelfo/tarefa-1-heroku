@@ -27,7 +27,7 @@
                 
                 <p> flag </p>
             </c:if>
-            
+            <%=hour%>
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
             <jsp:setProperty name="myBean" property="period" value="${timeBean.period}"/>
             <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! 
