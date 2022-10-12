@@ -24,12 +24,12 @@
             pageContext.setAttribute("hour", hour);
         %>
         <h2>
-            <c:if test="${not empty hour}">
-                <%=hour%>
+            <c:if test="${not empty hour}">  
                 <%
                 hour = (hour.split(":"))[0];
                 pageContext.setAttribute("hour", hour);
                 %>
+                <%=hour%>
             </c:if>
 
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
