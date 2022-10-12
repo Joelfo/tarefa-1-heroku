@@ -22,7 +22,7 @@
            <input type="radio" name="lang" value="de"> Alemão<br><br>
            Nome: <input type="text" name="nome"/><br><br>
            
-           <label for="text">Que horas são? (Se você não responder nada, será definido de forma automática)</label>
+           <label for="text">Que horas são? (Se você não responder nada, será definido pelo horário de Brasília)</label>
            <br><input type="time" name="hour"/> <br><br>
            <input type="submit" value="Cumprimentar"/>
         </form>
