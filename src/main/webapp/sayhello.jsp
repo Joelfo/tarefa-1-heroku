@@ -29,7 +29,7 @@
                 hour = (hour.split(":"))[0];
                 pageContext.setAttribute("hour", hour);
                 %>
-                <%=hour%>
+                <jsp:setProperty name="timeBean" property="time" value="<%=hour%>"/>
             </c:if>
 
             <jsp:setProperty name="myBean" property="lang" value="<%=lang%>"/>
