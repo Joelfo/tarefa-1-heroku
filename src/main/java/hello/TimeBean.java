@@ -18,7 +18,7 @@ public class TimeBean implements Serializable {
     private String period;
     
     public TimeBean() {
-       //setTime(Calendar.getInstance(TimeZone.getDefault()).get(Calendar.HOUR_OF_DAY));
+       setTime((float) Calendar.getInstance(TimeZone.getDefault()).get(Calendar.HOUR_OF_DAY));
     }
     
     public float getTime(){
