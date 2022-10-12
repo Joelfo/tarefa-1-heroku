@@ -30,6 +30,8 @@
             <jsp:setProperty name="myBean" property="period" value="${timeBean.period}"/>
             <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>! 
             <jsp:getProperty name="myBean" property="msg3"/>
+            <br>
+            <jsp:getProperty name="TimeBean" property="time"/>
         </h2>
         
         <jsp:getProperty name="myBean" property="msg2"/> <jsp:getProperty name="myBean" property="aut"/>
