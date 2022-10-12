@@ -27,7 +27,7 @@
             <c:if test="${not empty hour}">
                 <%=hour%>
                 <%
-                hour = (hour.split(":"))[0]
+                hour = (hour.split(":"))[0];
                 pageContext.setAttribute("hour", hour);
                 %>
             </c:if>
