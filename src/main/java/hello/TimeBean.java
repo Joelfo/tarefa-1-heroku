@@ -28,9 +28,9 @@ public class TimeBean implements Serializable {
         this.time = time;
     }
     public String getPeriod(){
-        if(time <= 12){
+        if(time < 12){
            period = "m";
-       } else if (time <= 18) {
+       } else if (time < 18) {
            period = "a";
        } else { 
            period = "e"; 
